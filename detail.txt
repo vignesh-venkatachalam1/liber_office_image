@@ -1,0 +1,4 @@
+ 
+podman build --file=Dockerfile --tag=demo:1.0 . --no-cache
+
+podman run -d --name=demo_service -p 9001:9001 demo:1.0
